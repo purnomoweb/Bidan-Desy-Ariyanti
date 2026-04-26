@@ -505,3 +505,31 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryCarousel.addEventListener('touchstart', () => isGalleryHovered = true, {passive: true});
         galleryCarousel.addEventListener('touchend', () => isGalleryHovered = false);
     }
+
+// === 12. LOGIKA FORM KE WHATSAPP (GRUP EDUKASI) ===
+    const formGrupWa = document.getElementById('form-grup-wa');
+
+    if (formGrupWa) {
+        formGrupWa.addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah halaman reload saat form dikirim
+
+            // Ambil data dari inputan
+            const nama = document.getElementById('namaBunda').value.trim();
+            const usia = document.getElementById('usiaAnakKandungan').value.trim();
+            const domisili = document.getElementById('domisili').value.trim();
+
+            // Nomor WA Tujuan (Bidan Desy)
+            const waNumber = "6281327189900";
+
+            // Susun template pesan
+            const waMessage = `Halo Bidan Desy, saya ingin bergabung dengan Grup Edukasi WA gratis. Berikut data diri saya:%0A%0A` +
+                              `*Nama:* ${nama}%0A` +
+                              `*Usia Kandungan/Anak:* ${usia}%0A` +
+                              `*Domisili:* ${domisili}%0A%0A` +
+                              `Mohon info link grupnya ya. Terima kasih! 🙏`;
+
+            // Arahkan ke WhatsApp
+            const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
+            window.open(waLink, '_blank');
+        });
+    }
