@@ -424,20 +424,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // 1. Tulis Database Galeri Anda di Sini
         const galleryDatabase = [
             {
-                img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80",
+                img: "Assets/Fasilitas/ruang-pemeriksaan.jpg",
                 title: "Ruang Pemeriksaan"
             },
             {
-                img: "https://images.unsplash.com/photo-1586942517865-c08502db6e33?auto=format&fit=crop&w=800&q=80",
-                title: "Fasilitas Baby SPA"
+                img: "Assets/Fasilitas/ruang-pemeriksaan-1.jpg",
+                title: "Ruang Pemeriksaan"
             },
             {
-                img: "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=800&q=80",
+                img: "Assets/Fasilitas/ruang-tunggu.jpg",
                 title: "Ruang Tunggu Nyaman"
             },
             {
-                img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-                title: "Peralatan Medis Modern"
+                img: "Assets/Fasilitas/ruangan-klinik.jpg",
+                title: "Ruangan Klinik"
+            },
+            {
+                img: "Assets/Fasilitas/ruang-bermain.jpg",
+                title: "Ruang Bermain"
+            },
+            {
+                img: "Assets/Fasilitas/depan-klinik.jpg",
+                title: "Depan Klinik"
             }
         ];
 
