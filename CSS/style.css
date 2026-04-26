@@ -1,0 +1,32 @@
+/* style.css */
+
+/* Animasi Hover Card Layanan */
+.service-card:hover .service-icon-bg {
+    background-color: #ff8f9f;
+    transform: translateY(-5px);
+}
+.service-card:hover .service-icon {
+    color: #ffffff;
+}
+
+/* Animasi Zoom Gambar Hover */
+.img-hover-zoom {
+    transition: transform 0.5s ease;
+}
+.img-hover-zoom:hover {
+    transform: scale(1.03);
+}
+
+/* Menyembunyikan Scrollbar default pada Carousel tapi tetap bisa di-scroll */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none; /* Untuk IE dan Edge */
+    scrollbar-width: none; /* Untuk Firefox */
+}
+
+/* Mencegah overflow halaman ke samping saat animasi AOS meluncur masuk */
+body {
+    overflow-x: hidden;
+}

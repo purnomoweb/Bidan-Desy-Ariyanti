@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - PMB Desy Ariyanti</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff8f9f',   
+                        primaryHover: '#fa7588', 
+                        textDark: '#333333',
+                        textLight: '#555555',
+                    },
+                    fontFamily: {
+                        sans: ['Afacad', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-textDark antialiased bg-gray-50 relative">
+
+    <div class="bg-primary text-white text-center py-2 text-lg font-medium w-full z-50 relative">
+        <i class="fa-solid fa-user-nurse mr-2"></i> Desy Ariyanti, S.Tr.Keb., Bdn.
+    </div>
+
+    <header class="bg-white shadow-sm w-full sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="Assets/Brand/logo-bda.jpg" alt="Logo Bidan Desy Ariyanti" class="h-12 w-auto object-contain">
+            </a>
+
+            <div class="flex items-center gap-6">
+                <ul class="hidden md:flex gap-6 font-medium text-textLight">
+                    <li><a href="index.html" class="hover:text-primary transition-all">Home</a></li>
+                    <li><a href="tentang.html" class="hover:text-primary transition-all">Tentang Kami</a></li>
+                    <li><a href="layanan.html" class="text-primary font-bold">Layanan</a></li>
+                    <li><a href="event-soon.html" class="hover:text-primary transition-all">Event</a></li>
+                    <li><a href="kontak.html" class="hover:text-primary transition-all">Kontak</a></li>
+                </ul>
+
+                <a href="kontak.html" class="bg-primary hover:bg-primaryHover text-white px-5 py-2 text-sm font-semibold rounded transition-colors duration-300 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 transition-all active:scale-95">
+                    BUAT JANJI
+                </a>
+
+                <button id="mobile-menu-btn" class="md:hidden text-textDark text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars transition-transform duration-300" id="hamburger-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <ul id="mobile-menu" class="absolute top-full left-0 w-full bg-white shadow-md flex flex-col text-center divide-y divide-gray-100 md:hidden border-t border-gray-100 transition-all duration-500 ease-in-out opacity-0 -translate-y-10 pointer-events-none z-50">
+            <li><a href="index.html" class="block py-4 font-medium text-textLight">Home</a></li>
+            <li><a href="tentang.html" class="block py-4 font-medium text-textLight">Tentang Kami</a></li>
+            <li><a href="layanan.html" class="block py-4 font-bold text-primary">Layanan</a></li>
+            <li><a href="event-soon.html" class="block py-4 font-medium text-textLight">Event</a></li>
+            <li><a href="kontak.html" class="block py-4 font-medium text-textLight">Kontak</a></li>
+        </ul>
+    </header>
+
+    <main class="overflow-x-hidden min-h-screen">
+
+        <section class="relative w-full h-[40vh] min-h-[300px] bg-cover bg-center flex items-center justify-center" 
+                 style="background-image: url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1920&q=80');">
+            <div class="absolute inset-0 bg-primary/85"></div>
+            <div class="relative z-10 text-center px-5" data-aos="zoom-in" data-aos-duration="800">
+                <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Daftar Layanan & Harga</h1>
+                <div class="flex items-center justify-center gap-2 text-white/90 text-sm md:text-base font-medium">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <i class="fa-solid fa-chevron-right text-xs opacity-70"></i>
+                    <span class="text-white">Layanan</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-5 bg-white">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <p class="text-lg md:text-xl text-textLight leading-relaxed">
+                    Bunda dapat melihat detail layanan, fasilitas, dan <strong class="text-primary font-bold">informasi harga lengkap</strong> langsung pada gambar brosur di bawah ini. Kami berkomitmen memberikan pelayanan transparan, profesional, dan penuh kasih sayang.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-10 pb-24 px-5 bg-gray-50 relative">
+            <div class="max-w-7xl mx-auto">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                    
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/baby-massage.jpg" alt="Brosur Harga Pemeriksaan Kehamilan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Baby Massage</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Membantu bayi tidur lebih nyenyak, merangsang tumbuh kembang bayi, meningkatkan sistem imun, mengurangi kembung dan kolik, melancarkan peredaran darah, membantu bayi lebih tenang.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20Massage*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/baby-spa.jpg" alt="Brosur Harga Baby SPA" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Baby SPA</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Perawatan terbaik untuk buah Hati tercinta membantu stimulasi motorik dan relaksasi, meningkatkan sirkulasi dan kualitas tidur bayi secara optimal.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20SPA*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/pelayanan-kb.jpg" alt="Brosur Harga Pelayanan KB" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Pelayanan KB</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Konsultasi dan pelayanan pemasangan berbagai metode kontrasepsi yang aman dan sesuai dengan kebutuhan ibu.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Pelayanan%20KB*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/sakinah-bumil-class.jpg" alt="Brosur Harga Imunisasi Anak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Sakinah Bumil Class</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Kelas edukasi dan senam hamil holistik untuk persiapan mental, fisik, dan spiritual menjelang persalinan.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Sakinah%20Bumil%20Class*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/newborn-photo.jpg" alt="Brosur Harga Perawatan Nifas & Laktasi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Newborn Photo</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Perawatan intensif bayi baru lahir yang diabadikan secara profesional melalui sesi pemotretan Newborn Photography.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20Photo*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/newborn-postpartum-care.jpg" alt="Brosur Harga Newborn Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Newborn & Postpartum Care</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Perawatan bayi baru lahir yang higienis, meliputi memandikan, perawatan tali pusat, hingga pijat laktasi.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20&%20Postpartum%20Care*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-gray-100 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(255,143,159,0.15)] transition-all duration-300 group flex flex-col h-full overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-full aspect-[1131/1600] relative bg-gray-100 overflow-hidden shrink-0">
+                            <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                            <img src="Assets/Flyer/vagina-toilet.jpg" alt="Brosur Harga Perawatan Nifas & Laktasi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="p-6 md:p-8 flex flex-col flex-1">
+                            <h3 class="text-xl md:text-2xl font-bold text-textDark mb-3 group-hover:text-primary transition-colors">Vagina Toilet</h3>
+                            <p class="text-textLight text-sm md:text-base leading-relaxed mb-6 flex-1">
+                                Perawatan kebersihan area kewanitaan menggunakan teknik yang aman dan higienis untuk membantu menjaga kebersihan vagina, mengurangi keluhan keputihan, serta memberikan rasa segar dan nyaman pada area intim.
+                            </p>
+                            <a href="https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Vagina%20Toilet*" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-gray-50 text-textDark font-bold rounded-xl hover:bg-primary hover:text-white transition-colors duration-300 border border-gray-100 active:scale-95 text-sm md:text-base">
+                                Reservasi <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-16 px-5 bg-white border-t border-gray-100">
+            <div class="max-w-5xl mx-auto bg-primary/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 border border-primary/20" data-aos="zoom-in">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl md:text-3xl font-bold text-textDark mb-2">Butuh Konsultasi Khusus?</h3>
+                    <p class="text-textLight">Bidan Desy siap mendengarkan keluhan dan memberikan solusi terbaik untuk kesehatan Bunda dan Buah Hati.</p>
+                </div>
+                <a href="kontak.html" class="shrink-0 bg-primary hover:bg-primaryHover text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-[0_8px_20px_rgba(255,143,159,0.3)] hover:-translate-y-1 hover:shadow-[0_12px_25px_rgba(255,143,159,0.4)] flex items-center gap-3 text-sm md:text-base active:scale-95">
+                    HUBUNGI KAMI <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-white pt-16 pb-24 md:pb-8">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <img src="Assets/Brand/logo-bda-1.jpg" alt="Logo Bidan Desy Ariyanti" class="h-16 w-16 rounded-full object-cover bg-white p-1 mb-5 shadow-sm">
+                    
+                    <p class="text-white/90 text-sm mb-6 leading-relaxed">
+                        Memberikan pelayanan asuhan kebidanan yang profesional, aman, dan nyaman mulai dari masa kehamilan hingga tumbuh kembang buah hati Anda.
+                    </p>
+                    <h4 class="font-semibold mb-3">Ikuti Kami:</h4>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-instagram text-lg"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-tiktok text-lg"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-facebook-f text-lg"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300 transform hover:-translate-y-1"><i class="fa-brands fa-youtube text-lg"></i></a>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-xl font-bold mb-5 border-b-2 border-white/30 pb-2 inline-block">Hubungi Kami</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-white/90"></i>
+                            <span class="text-sm text-white/90">Ngledok, Tawangrejo, Kec. Tunjungan, <br/>Kab. Blora, Jawa Tengah 58252</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-white/90"></i>
+                            <a href="https://wa.me/6281327189900" target="_blank" class="text-sm text-white/90 hover:text-white hover:underline transition-colors">0813-2718-9900</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-regular fa-envelope text-white/90"></i>
+                            <a href="mailto:desy.ariyanti@gmail.com" class="text-sm text-white/90 hover:text-white hover:underline transition-colors">desy.ariyanti@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-regular fa-clock text-white/90"></i>
+                            <div class="text-sm text-white/90 leading-relaxed">
+                                Senin - Sabtu: 08.00 - 20.00 WIB <br>
+                                Minggu: 16.00 - 20.00 WIB
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-xl font-bold mb-5 border-b-2 border-white/30 pb-2 inline-block">Peta Lokasi</h4>
+                    <div class="w-full h-48 rounded-xl overflow-hidden shadow-lg border-2 border-white/20">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15820.6337552077!2d110.8649895!3d-7.5576975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e774700678db713%3A0xea8f1d57e00b6ae0!2sBaby%20Spa%20%26%20Praktik%20Bidan%20Desy!5e0!3m2!1sen!2sid!4v1777094545085!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center pt-8 border-t border-white/20 text-white/80 text-sm">
+                <p>&copy; 2026 Praktik Mandiri Bidan Desy Ariyanti. All Rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6281327189900" target="_blank" id="floating-wa" class="fixed bottom-24 right-0 z-[90] bg-[#25D366] text-white pl-4 pr-3 py-3 md:pl-5 md:pr-4 md:py-3 rounded-l-full shadow-[-4px_4px_15px_rgba(37,211,102,0.4)] flex items-center gap-2 hover:bg-[#20b858] hover:pr-5 transition-all duration-500 opacity-0 translate-x-full pointer-events-none group">
+        <i class="fa-brands fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-sm md:text-base pr-1">Konsultasi</span>
+    </a>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
