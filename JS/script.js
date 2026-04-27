@@ -137,11 +137,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = document.createElement('a');
             a.href = item.link;
             a.target = "_blank";
-            a.className = "w-full h-full shrink-0 block cursor-pointer";
+            a.className = "w-full shrink-0 block cursor-pointer"; 
             
             const img = document.createElement('img');
             img.src = item.src;
-            img.className = "w-full h-full object-cover"; 
+            // DIKEMBALIKAN: Memaksa rasio 1131:1600 agar gambar utuh 100%
+            img.className = "w-full h-auto aspect-[1131/1600] object-cover"; 
             
             a.appendChild(img);
             popupTrack.appendChild(a);
