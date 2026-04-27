@@ -137,12 +137,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const a = document.createElement('a');
             a.href = item.link;
             a.target = "_blank";
-            a.className = "w-full shrink-0 block cursor-pointer"; 
+            // KUNCI: h-full agar mengikuti tinggi container yang sudah dibatasi
+            a.className = "w-full h-full shrink-0 block cursor-pointer"; 
             
             const img = document.createElement('img');
             img.src = item.src;
-            // DIKEMBALIKAN: Memaksa rasio 1131:1600 agar gambar utuh 100%
-            img.className = "w-full h-auto aspect-[1131/1600] object-cover"; 
+            
+            /* KUNCI UTAMA: 
+               - h-full: Mengikuti tinggi kotak yang tersedia.
+               - w-auto: Lebar menyesuaikan secara otomatis.
+               - object-contain: Menjamin proporsi 1131x1600 tetap terjaga dan tidak ada bagian yang terpotong.
+               - mx-auto: Memastikan gambar di tengah jika kotaknya lebih lebar.
+            */
+            img.className = "h-full w-auto object-contain mx-auto"; 
             
             a.appendChild(img);
             popupTrack.appendChild(a);
