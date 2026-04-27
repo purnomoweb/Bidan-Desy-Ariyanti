@@ -86,20 +86,20 @@
     
     <div id="popup-banner" class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300">
         
-        <div class="relative bg-white p-2 md:p-3 rounded-2xl shadow-2xl w-[90%] max-w-[400px] max-h-[90vh] flex flex-col scale-95 transition-transform duration-300" id="popup-content">
+        <div class="relative bg-white p-2 rounded-2xl shadow-2xl w-[85%] max-w-[320px] sm:max-w-[340px] md:max-w-[380px] scale-95 transition-transform duration-300" id="popup-content">
             
-            <button id="close-popup" class="absolute -top-3 -right-3 md:-top-4 md:-right-4 bg-white text-gray-400 hover:text-primary rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center shadow-md z-[110] transition-colors">
+            <button id="close-popup" class="absolute -top-3 -right-3 md:-top-4 md:-right-4 bg-white text-gray-400 hover:text-primary rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center shadow-md z-10 transition-colors">
                 <i class="fa-solid fa-xmark"></i>
             </button>
 
-            <div class="overflow-hidden rounded-xl relative bg-gray-50 flex-1 min-h-0">
-                <div id="popup-track" class="flex h-full transition-transform duration-500 ease-in-out">
+            <div class="overflow-hidden rounded-xl relative bg-gray-50">
+                <div id="popup-track" class="flex transition-transform duration-500 ease-in-out">
                     </div>
             </div>
 
-            <div id="popup-dots" class="flex justify-center gap-2 mt-3 shrink-0"></div>
+            <div id="popup-dots" class="flex justify-center gap-2 mt-3"></div>
 
-            <div class="mt-3 text-center pb-2 shrink-0">
+            <div class="mt-3 text-center pb-2">
                 <a id="popup-cta" href="#" target="_blank" class="inline-block w-[80%] bg-primary hover:bg-primaryHover text-white px-6 py-2.5 rounded-full font-bold transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-sm md:text-base">
                     Klik Disini
                 </a>
