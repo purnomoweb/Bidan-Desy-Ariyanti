@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               `Mohon info link grupnya ya. Terima kasih! 🙏`;
 
             // Arahkan ke WhatsApp
-            const waLink = `https://wa.me/${waNumber}?text=${waMessage}`;
+            const waLink = `https://api.whatsapp.com/send/?phone=${waNumber}&text=${waMessage}`;
             window.open(waLink, '_blank');
         });
     }
