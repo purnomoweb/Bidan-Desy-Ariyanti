@@ -100,31 +100,31 @@ document.addEventListener('DOMContentLoaded', () => {
         { 
             // Ganti src dengan link poster promosi/event Anda
             src: "Assets/Flyer/baby-massage.jpg", 
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20Massage*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20Massage*"
         },
         { 
             src: "Assets/Flyer/baby-spa.jpg", 
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20SPA*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Baby%20SPA*"
         },
         { 
             src: "Assets/Flyer/newborn-photo.jpg", 
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20Photo*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20Photo*"
         },
         {
             src: "Assets/Flyer/newborn-postpartum-care.jpg", 
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20&%20Postpartum%20Care*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Newborn%20&%20Postpartum%20Care*"
         },
         {
             src: "Assets/Flyer/pelayanan-kb.jpg",
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Pelayanan%20KB*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Pelayanan%20KB*"
         },
         {
             src: "Assets/Flyer/sakinah-bumil-class.jpg",
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Sakinah%20Bumil%20Class*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Sakinah%20Bumil%20Class*"
         },
         {
             src: "Assets/Flyer/vagina-toilet.jpg",
-            link: "https://wa.me/6281327189900?text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Vagina%20Toilet*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Vagina%20Toilet*"
         }
     ];
 
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                            `Terima kasih.`;
 
             // Membuat link WhatsApp dan membuka di tab baru/aplikasi WA
-            const waLink = `https://wa.me/${waNumber}?text=${textWA}`;
+            const waLink = `https://api.whatsapp.com/send/?phone=${waNumber}&text=${textWA}`;
             window.open(waLink, '_blank');
             
             // Mengosongkan form setelah dikirim (opsional)
@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Buat link WA dinamis berdasarkan judul event
                 const waNumber = "6281327189900";
                 const waText = `Halo Bidan Desy, saya ingin mendaftar acara *${title}* yang diadakan pada ${date}. Mohon info persyaratannya. Terima kasih.`;
-                modalBtnWa.href = `https://wa.me/${waNumber}?text=${waText}`;
+                modalBtnWa.href = `https://api.whatsapp.com/send/?phone=${waNumber}&text=${waText}`;
 
                 // RESET SCROLL: Kembalikan posisi scroll ke paling atas (0)
                 if (scrollableArea) {
