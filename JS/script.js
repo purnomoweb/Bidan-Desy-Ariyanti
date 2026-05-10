@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             src: "Assets/Flyer/vagina-toilet.jpg",
-            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Vagina%20Toilet*"
+            link: "https://api.whatsapp.com/send/?phone=6281327189900&text=Halo%20Bu%20Bidan,%20saya%20ingin%20tahu%20lebih%20lanjut%20terkait%20*Vaginal%20Toilet*"
         }
     ];
 
@@ -226,12 +226,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const waNumber = "6281327189900";
 
             // Membuat format pesan yang rapi
-            const textWA = `Halo Bu Bidan, saya ingin berkonsultasi.%0A%0A` +
-                           `*Nama:* ${nama}%0A` +
-                           `*No. HP/WA:* ${nohp}%0A` +
-                           `*Layanan Dituju:* ${layanan}%0A` +
-                           `*Pesan/Keluhan:* ${pesan}%0A%0A` +
-                           `Terima kasih.`;
+            const textWA = `Halo Bu Bidan Desy, saya ingin berkonsultasi. Ini adalah data saya:%0A%0A` +
+                           `- *Nama:* ${nama}%0A` +
+                           `- *No. HP/WA:* ${nohp}%0A` +
+                           `- *Layanan Dituju:* ${layanan}%0A` +
+                           `- *Pesan/Keluhan:* ${pesan}%0A%0A` +
+                           `Terima kasih Bu Bidan.`;
 
             // Membuat link WhatsApp dan membuka di tab baru/aplikasi WA
             const waLink = `https://api.whatsapp.com/send/?phone=${waNumber}&text=${textWA}`;
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Buat link WA dinamis berdasarkan judul event
                 const waNumber = "6281327189900";
-                const waText = `Halo Bidan Desy, saya ingin mendaftar acara *${title}* yang diadakan pada ${date}. Mohon info persyaratannya. Terima kasih.`;
+                const waText = `Halo Bu Bidan Desy, saya ingin mendaftar acara *${title}* yang diadakan pada ${date}. Mohon info persyaratannya. Terima kasih.`;
                 modalBtnWa.href = `https://api.whatsapp.com/send/?phone=${waNumber}&text=${waText}`;
 
                 // RESET SCROLL: Kembalikan posisi scroll ke paling atas (0)
